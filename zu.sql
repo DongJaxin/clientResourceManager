@@ -12,6 +12,8 @@ File Encoding         : 65001
 
 Date: 2017-10-10 21:56:34
 */
+CREATE DATABASE zu;
+USE zu;
 
 SET FOREIGN_KEY_CHECKS=0;
 
