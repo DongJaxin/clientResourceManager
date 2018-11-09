@@ -2,8 +2,8 @@ package dao;
 
 import java.util.List;
 
-import Pojo.QueryVo;
-import Pojo.Topaid;
+import bean.QueryVo;
+import bean.Topaid;
 
 public interface TopaidMapper {
 public void inserttopaid(Topaid topaid);

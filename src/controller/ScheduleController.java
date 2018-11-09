@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
-import Pojo.Houselist;
-import Pojo.Schedule;
+import bean.Houselist;
+import bean.Schedule;
 import service.ScheduleService;
 
 @Controller

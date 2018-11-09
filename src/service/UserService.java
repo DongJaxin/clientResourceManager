@@ -2,8 +2,8 @@ package service;
 
 import java.util.List;
 
-import Pojo.User;
-import Pojo.Userlist;
+import bean.User;
+import bean.Userlist;
 
 public interface UserService {
 

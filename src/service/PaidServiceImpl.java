@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import Pojo.Paid;
-import Pojo.QueryVo;
-import Pojo.Zulist;
+import bean.Paid;
+import bean.QueryVo;
+import bean.Zulist;
 import dao.PaidMapper;
 import dao.ZulistMapper;
 @Service

@@ -6,10 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import Pojo.Applyout;
-import Pojo.Checkout;
-import Pojo.Houselist;
-import Pojo.Zulist;
+import bean.Applyout;
+import bean.Checkout;
+import bean.Houselist;
+import bean.Zulist;
 import dao.ApplyoutMapper;
 import dao.CheckoutMapper;
 import dao.HetongMapper;

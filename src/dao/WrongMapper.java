@@ -2,8 +2,8 @@ package dao;
 
 import java.util.List;
 
-import Pojo.QueryVo;
-import Pojo.Wrong;
+import bean.QueryVo;
+import bean.Wrong;
 
 public interface WrongMapper {
   public List<Wrong> findwrong(QueryVo vo);

@@ -2,10 +2,10 @@ package service;
 
 import java.util.List;
 
-import Pojo.Paid;
-import Pojo.QueryVo;
-import Pojo.Solve;
-import Pojo.Wrong;
+import bean.Paid;
+import bean.QueryVo;
+import bean.Solve;
+import bean.Wrong;
 
 public interface SolveService {
 	public List<Solve> selectall(QueryVo vo);

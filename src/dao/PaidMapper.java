@@ -2,8 +2,8 @@ package dao;
 
 import java.util.List;
 
-import Pojo.Paid;
-import Pojo.QueryVo;
+import bean.Paid;
+import bean.QueryVo;
 
 public interface PaidMapper {
 public List<Paid> selectall(QueryVo vo);

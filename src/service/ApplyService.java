@@ -2,8 +2,8 @@ package service;
 
 import java.util.List;
 
-import Pojo.Apply;
-import Pojo.Houselist;
+import bean.Apply;
+import bean.Houselist;
 
 public interface ApplyService {
 	

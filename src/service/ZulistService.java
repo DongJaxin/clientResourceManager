@@ -2,7 +2,7 @@ package service;
 
 import java.util.List;
 
-import Pojo.Zulist;
+import bean.Zulist;
 
 public interface ZulistService {
 	public void insertzulist(Zulist zulist);

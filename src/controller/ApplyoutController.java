@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
-import Pojo.Applyout;
-import Pojo.Houselist;
-import Pojo.User;
-import Pojo.Userlist;
-import Pojo.Zulist;
+import bean.Applyout;
+import bean.Houselist;
+import bean.User;
+import bean.Userlist;
+import bean.Zulist;
 import service.ApplyoutService;
 import service.UserlistService;
 import service.ZulistService;

@@ -11,12 +11,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import Pojo.Houselist;
-import Pojo.User;
-import Pojo.Userlist;
 import service.UserlistService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+
+import bean.Houselist;
+import bean.User;
+import bean.Userlist;
 @Controller
 public class UserlistController {
 

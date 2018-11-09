@@ -2,8 +2,8 @@ package dao;
 
 import java.util.List;
 
-import Pojo.Apply;
-import Pojo.Zulist;
+import bean.Apply;
+import bean.Zulist;
 
 public interface ZulistMapper {
 	public void insertzulist(Zulist zulist);

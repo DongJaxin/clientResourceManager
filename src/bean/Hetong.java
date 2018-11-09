@@ -1,4 +1,4 @@
-package Pojo;
+package bean;
 
 public class Hetong {
 private Integer id;

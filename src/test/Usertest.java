@@ -6,10 +6,10 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import bean.User;
+import bean.UserExample;
+import bean.UserExample.Criteria;
 import dao.UserMapper;
-import Pojo.User;
-import Pojo.UserExample;
-import Pojo.UserExample.Criteria;
 import javassist.compiler.ast.Symbol;
 public class Usertest {
 private ApplicationContext applicatonContext;

@@ -2,7 +2,7 @@ package dao;
 
 import java.util.List;
 
-import Pojo.Checkout;
+import bean.Checkout;
 
 public interface CheckoutMapper {
 	public void insertcheckout(Checkout checkout);

@@ -2,8 +2,8 @@ package dao;
 
 import java.util.List;
 
-import Pojo.Houselist;
-import Pojo.QueryVo;
+import bean.Houselist;
+import bean.QueryVo;
 
 public interface HouselistMapper {
 List<Houselist> selectAll();

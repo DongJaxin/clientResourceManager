@@ -2,8 +2,8 @@ package dao;
 
 import java.util.List;
 
-import Pojo.Apply;
-import Pojo.Applyout;
+import bean.Apply;
+import bean.Applyout;
 
 public interface ApplyMapper {
 	void insertapply(Apply apply);

@@ -14,11 +14,11 @@ import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
-import Pojo.Apply;
-import Pojo.Hetong;
-import Pojo.User;
-import Pojo.Userlist;
-import Pojo.Zulist;
+import bean.Apply;
+import bean.Hetong;
+import bean.User;
+import bean.Userlist;
+import bean.Zulist;
 import service.UserlistService;
 import service.ZulistService;
 

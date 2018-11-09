@@ -1,4 +1,4 @@
-package Pojo;
+package bean;
 
 public class Houselist {
   private Integer id;

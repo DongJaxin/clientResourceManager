@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import Pojo.QueryVo;
-import Pojo.Solve;
-import Pojo.Wrong;
+import bean.QueryVo;
+import bean.Solve;
+import bean.Wrong;
 import dao.SolveMapper;
 import dao.WrongMapper;
 @Service

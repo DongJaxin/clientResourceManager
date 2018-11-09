@@ -2,9 +2,9 @@ package service;
 
 import java.util.List;
 
-import Pojo.Paid;
-import Pojo.QueryVo;
-import Pojo.Topaid;
+import bean.Paid;
+import bean.QueryVo;
+import bean.Topaid;
 
 public interface TopaidService {
 	public void inserttopaid(Topaid topaid);

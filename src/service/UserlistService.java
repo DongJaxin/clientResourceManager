@@ -2,7 +2,7 @@ package service;
 
 import java.util.List;
 
-import Pojo.Userlist;
+import bean.Userlist;
 
 public interface UserlistService {
 	Userlist findhasuserlist(Integer user_id);

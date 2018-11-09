@@ -1,6 +1,6 @@
 package dao;
 
-import Pojo.Hetong;
+import bean.Hetong;
 
 public interface HetongMapper {
 	

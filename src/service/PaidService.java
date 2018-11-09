@@ -2,9 +2,9 @@ package service;
 
 import java.util.List;
 
-import Pojo.Paid;
-import Pojo.QueryVo;
-import Pojo.Zulist;
+import bean.Paid;
+import bean.QueryVo;
+import bean.Zulist;
 
 public interface PaidService {
 	public List<Paid> selectall(QueryVo vo);

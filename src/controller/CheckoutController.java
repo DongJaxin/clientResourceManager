@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
-import Pojo.Checkout;
-import Pojo.Houselist;
-import Pojo.User;
-import Pojo.Userlist;
+import bean.Checkout;
+import bean.Houselist;
+import bean.User;
+import bean.Userlist;
 import service.CheckoutService;
 import service.UserlistService;
 @Controller

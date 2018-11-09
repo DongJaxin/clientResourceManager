@@ -1,6 +1,6 @@
 package service;
 
-import Pojo.Hetong;
+import bean.Hetong;
 
 public interface HetongService {
 

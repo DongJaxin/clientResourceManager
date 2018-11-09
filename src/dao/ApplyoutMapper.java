@@ -2,7 +2,7 @@ package dao;
 
 import java.util.List;
 
-import Pojo.Applyout;
+import bean.Applyout;
 
 public interface ApplyoutMapper {
 	public void insertapplyout(Applyout applyout);

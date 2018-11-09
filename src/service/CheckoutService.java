@@ -2,9 +2,9 @@ package service;
 
 import java.util.List;
 
-import Pojo.Applyout;
-import Pojo.Checkout;
-import Pojo.Zulist;
+import bean.Applyout;
+import bean.Checkout;
+import bean.Zulist;
 
 public interface CheckoutService {
 public void insertcheckout(Checkout checkout);

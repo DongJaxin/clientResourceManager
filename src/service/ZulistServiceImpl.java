@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import Pojo.Zulist;
+import bean.Zulist;
 import dao.HouselistMapper;
 import dao.ZulistMapper;
 

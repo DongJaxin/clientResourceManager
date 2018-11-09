@@ -3,9 +3,12 @@ package service;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
+
+import bean.Houselist;
+import bean.QueryVo;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import Pojo.Houselist;
-import Pojo.QueryVo;
+
 import dao.HouselistMapper;
 
 @Service

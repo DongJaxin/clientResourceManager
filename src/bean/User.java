@@ -1,4 +1,4 @@
-package Pojo;
+package bean;
 
 public class User {
     private Integer id;

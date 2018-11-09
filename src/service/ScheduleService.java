@@ -2,7 +2,7 @@ package service;
 
 import java.util.List;
 
-import Pojo.Schedule;
+import bean.Schedule;
 
 public interface ScheduleService {
 	public void insertschedule(Schedule schedule);

@@ -1,16 +1,21 @@
-package Pojo;
+package bean;
 
-import java.sql.Date;
+import java.util.List;
 
-public class Wrong {
+public class Applyout {
  private Integer id;
  private String house_id;
  private String address;
- private Date date;
- private String detail;
- private String name;
- private Integer userlist_id;
  private String status;
+ private Integer userlist_id;
+ private List<Userlist> userlist;
+ 
+public List<Userlist> getUserlist() {
+	return userlist;
+}
+public void setUserlist(List<Userlist> userlist) {
+	this.userlist = userlist;
+}
 public Integer getId() {
 	return id;
 }
@@ -29,35 +34,17 @@ public String getAddress() {
 public void setAddress(String address) {
 	this.address = address;
 }
-public Date getDate() {
-	return date;
+public String getStatus() {
+	return status;
 }
-public void setDate(Date date) {
-	this.date = date;
-}
-public String getDetail() {
-	return detail;
-}
-public void setDetail(String detail) {
-	this.detail = detail;
-}
-public String getName() {
-	return name;
-}
-public void setName(String name) {
-	this.name = name;
+public void setStatus(String status) {
+	this.status = status;
 }
 public Integer getUserlist_id() {
 	return userlist_id;
 }
 public void setUserlist_id(Integer userlist_id) {
 	this.userlist_id = userlist_id;
-}
-public String getStatus() {
-	return status;
-}
-public void setStatus(String status) {
-	this.status = status;
 }
  
 }

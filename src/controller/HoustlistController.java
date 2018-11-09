@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
-import Pojo.Houselist;
+import bean.Houselist;
+import bean.QueryVo;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import service.HouselistService;
 import cn.itcast.utils.Page;
-import Pojo.QueryVo;
 @Controller
 
 public class HoustlistController {

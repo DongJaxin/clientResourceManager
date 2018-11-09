@@ -2,7 +2,7 @@ package dao;
 
 import java.util.List;
 
-import Pojo.Schedule;
+import bean.Schedule;
 
 public interface ScheduleMapper {
 	public void insertschedule(Schedule schedule);

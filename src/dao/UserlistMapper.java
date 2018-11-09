@@ -2,7 +2,7 @@ package dao;
 
 import java.util.List;
 
-import Pojo.Userlist;
+import bean.Userlist;
 
 public interface UserlistMapper {
 	Userlist findhasuserlist(Integer user_id);

@@ -5,11 +5,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import Pojo.Apply;
-import Pojo.Checkout;
-import Pojo.Hetong;
-import Pojo.Houselist;
-import Pojo.Zulist;
+import bean.Apply;
+import bean.Checkout;
+import bean.Hetong;
+import bean.Houselist;
+import bean.Zulist;
 import service.ApplyService;
 import service.CheckoutService;
 import service.HetongService;

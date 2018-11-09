@@ -2,8 +2,8 @@ package dao;
 
 import java.util.List;
 
-import Pojo.QueryVo;
-import Pojo.Solve;
+import bean.QueryVo;
+import bean.Solve;
 
 public interface SolveMapper {
 	public List<Solve> selectall(QueryVo vo);

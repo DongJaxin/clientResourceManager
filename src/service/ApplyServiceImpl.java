@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import Pojo.Apply;
-import Pojo.Houselist;
+import bean.Apply;
+import bean.Houselist;
 import dao.ApplyMapper;
 import dao.HouselistMapper;
 import dao.UserlistMapper;

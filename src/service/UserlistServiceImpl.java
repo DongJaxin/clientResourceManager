@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import Pojo.Userlist;
+import bean.Userlist;
 import dao.UserlistMapper;
 
 @Service

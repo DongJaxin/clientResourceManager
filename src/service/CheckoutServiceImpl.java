@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 
-import Pojo.Applyout;
-import Pojo.Checkout;
-import Pojo.Zulist;
+import bean.Applyout;
+import bean.Checkout;
+import bean.Zulist;
 import dao.CheckoutMapper;
 @Service
 @Transactional
