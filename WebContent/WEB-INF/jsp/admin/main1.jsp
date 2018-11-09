@@ -28,7 +28,7 @@
            success:function(data){
              // alert(data);
              $("#inside").html(data);
-             alert("成功");
+             alert("操作成功");
           },
           error: function() {  
               alert("失败，请稍后再试！");  
