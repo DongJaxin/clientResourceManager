@@ -15,7 +15,7 @@
 <h1>首页</h1>
 </div>
 <div class="result-content">
-<div class="sidebar-title">
+<div class="sidebar-title" style="text-align:center;">
  <h1>欢迎来到客户管理系统！</h1>
         </div>
         </div>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="dao.UserlistMapper" >
-  <resultMap id="applyResultMap" type="Pojo.Userlist" >
+  <resultMap id="applyResultMap" type="bean.Userlist" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="idcard" property="idcard" jdbcType="VARCHAR" />
     <result column="phone" property="phone" jdbcType="VARCHAR" />
      <result column="user_id" property="user_id" jdbcType="INTEGER" />
-     <collection property="apply" ofType="Pojo.Apply">
+     <collection property="apply" ofType="bean.Apply">
 			<id property="id" column="apply_id"/>	
 		<!--用户id已经在user对象中存在，此处可以不设置-->
 			<!-- <result property="userId" column="id"/> -->
@@ -19,13 +19,13 @@
 		</collection>
      
   </resultMap>
-  <resultMap id="zuResultMap" type="Pojo.Userlist" >
+  <resultMap id="zuResultMap" type="bean.Userlist" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="idcard" property="idcard" jdbcType="VARCHAR" />
     <result column="phone" property="phone" jdbcType="VARCHAR" />
      <result column="user_id" property="user_id" jdbcType="INTEGER" />
-     <collection property="zulist" ofType="Pojo.Zulist">
+     <collection property="zulist" ofType="bean.Zulist">
 			<id property="zid" column="zid"/>	
 		<!--用户id已经在user对象中存在，此处可以不设置-->
 			<!-- <result property="userId" column="id"/> -->
@@ -37,13 +37,13 @@
 		</collection>
      
   </resultMap>
-   <resultMap id="checkoutResultMap" type="Pojo.Userlist" >
+   <resultMap id="checkoutResultMap" type="bean.Userlist" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="idcard" property="idcard" jdbcType="VARCHAR" />
     <result column="phone" property="phone" jdbcType="VARCHAR" />
      <result column="user_id" property="user_id" jdbcType="INTEGER" />
-     <collection property="checkout" ofType="Pojo.Checkout">
+     <collection property="checkout" ofType="bean.Checkout">
 			<id property="id" column="cid"/>	
 		<!--用户id已经在user对象中存在，此处可以不设置-->
 			<!-- <result property="userId" column="id"/> -->
@@ -55,13 +55,13 @@
 		</collection>
      
   </resultMap>
-     <resultMap id="applyoutResultMap" type="Pojo.Userlist" >
+     <resultMap id="applyoutResultMap" type="bean.Userlist" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="idcard" property="idcard" jdbcType="VARCHAR" />
     <result column="phone" property="phone" jdbcType="VARCHAR" />
      <result column="user_id" property="user_id" jdbcType="INTEGER" />
-     <collection property="applyout" ofType="Pojo.Applyout">
+     <collection property="applyout" ofType="bean.Applyout">
 			<id property="id" column="aoid"/>	
 		<!--用户id已经在user对象中存在，此处可以不设置-->
 			<!-- <result property="userId" column="id"/> -->
@@ -73,13 +73,13 @@
 		</collection>
      
   </resultMap>
-      <resultMap id="userMap" type="Pojo.Userlist" >
+      <resultMap id="userMap" type="bean.Userlist" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="idcard" property="idcard" jdbcType="VARCHAR" />
     <result column="phone" property="phone" jdbcType="VARCHAR" />
      <result column="user_id" property="user_id" jdbcType="INTEGER" />
-     <association property="user" javaType="Pojo.User">
+     <association property="user" javaType="bean.User">
 			<!-- column:user表的主键对应的列  property：user对象中id属性-->
 			<id column="id" property="id"/>
 			<result column="username" property="username"/>
@@ -101,21 +101,21 @@ FROM
 	`user` u
 , userlist ul where u.id = ul.user_id and u.type='zuke'
 	</select>
- 	<select id="findhasuserlist" parameterType="Integer" resultType="Pojo.Userlist">
+ 	<select id="findhasuserlist" parameterType="Integer" resultType="bean.Userlist">
 		select * from userlist where user_id=#{user_id}
 	</select>
  	
- 	<select id="checkuserlist" parameterType="String" resultType="Pojo.Userlist">
+ 	<select id="checkuserlist" parameterType="String" resultType="bean.Userlist">
 		select * from userlist where idcard=#{idcard}
 	</select>
-	<insert id="insertuserlist" parameterType="Pojo.Userlist">
+	<insert id="insertuserlist" parameterType="bean.Userlist">
 	  insert into userlist(name,idcard,phone,user_id) 
 	  values(#{name},#{idcard},#{phone},#{user_id})
 	</insert>
-	<select id="finduserlistupdate" parameterType="Pojo.Userlist" resultType="Pojo.Userlist">
+	<select id="finduserlistupdate" parameterType="bean.Userlist" resultType="bean.Userlist">
 		select * from userlist where idcard=#{idcard} and id!=#{id}
 	</select>
-	<update id="updateuserlist" parameterType="Pojo.Userlist">
+	<update id="updateuserlist" parameterType="bean.Userlist">
 		update userlist set name=#{name},idcard=#{idcard},phone=#{phone}
 		where id=#{id}
 </update>

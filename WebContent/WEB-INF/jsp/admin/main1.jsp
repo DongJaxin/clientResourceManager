@@ -11,10 +11,10 @@
 <head>
 <meta charset="UTF-8">
 <title>客户管理系统</title>
-<link rel="stylesheet" type="text/css" href="/text2/css/common.css"/>
-<link rel="stylesheet" type="text/css" href="/text2/css/main.css"/>
-<script type="text/javascript" src="/text2/js/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="/text2/js/libs/modernizr.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/clientResourceManager/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="/clientResourceManager/css/main.css"/>
+<script type="text/javascript" src="/clientResourceManager/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/clientResourceManager/js/libs/modernizr.min.js"></script>
  <style>
     a:hover{cursor:pointer;}
 </style>
@@ -43,7 +43,7 @@
         <div class="topbar-logo-wrap clearfix">
             <h1 class="topbar-logo none"><a href="index.html" class="navbar-brand">后台管理</a></h1>
             <ul class="navbar-list clearfix">
-                <li><a class="on sendRequest" href="javascript::void(0)" onclick="to_page('toindex.action')">首页</a></li>
+                <li><a class="on sendRequest" href="javascript::void(0)" onclick="to_page('/clientResourceManager/toindex.action')">首页</a></li>
                
             </ul>
         </div>
@@ -51,7 +51,7 @@
             <ul class="top-info-list clearfix">
                 <li>欢迎您，${sessionScope.user.username}！</li>
                 
-                <li><a href="javascript:if(confirm('确实要退出登录吗?'))location='/text2/login.action'">退出</a></li>
+                <li><a href="javascript:if(confirm('确实要退出登录吗?'))location='/clientResourceManager/login.action'">退出</a></li>
             </ul>
         </div>
     </div>
@@ -66,8 +66,8 @@
                 <li>
                     <a class="a"><i class="icon-font">&#xe003;</i>客户信息</a>
                     <div class="p"><ul class="sub-menu">
-                        <li><a href="/text2/ahouselist.action"><i class="icon-font">&#xe008;</i>客户信息</a></li>
-                         <li><a href="/text2/toaddhouse.action"><i class="icon-font">&#xe008;</i>添加客户</a></li>
+                        <li><a href="/clientResourceManager/ahouselist.action"><i class="icon-font">&#xe008;</i>客户信息</a></li>
+                         <li><a href="/clientResourceManager/toaddhouse.action"><i class="icon-font">&#xe008;</i>添加客户</a></li>
        
                     </ul>
                     </div>
@@ -75,9 +75,9 @@
                 <li>
                     <a class="a"><i class="icon-font">&#xe018;</i>合同信息</a>
              <div class="p">         <ul class="sub-menu">
-                        <li><a href="/text2/zulist/findzulist.action"><i class="icon-font">&#xe017;</i>合同列表</a></li>
+                        <li><a href="/clientResourceManager/zulist/findzulist.action"><i class="icon-font">&#xe017;</i>合同列表</a></li>
                       
-                        <li><a href="/text2/checkout/getallcheckout.action"><i class="icon-font">&#xe037;</i>已过期列表</a></li>
+                        <li><a href="/clientResourceManager/checkout/getallcheckout.action"><i class="icon-font">&#xe037;</i>已过期列表</a></li>
                         
                     </ul>
                     </div>
@@ -85,8 +85,8 @@
                 <li>
                     <a class="a"><i class="icon-font">&#xe018;</i>申请列表</a>
         <div class="p">            <ul class="sub-menu">
-                        <li><a href="/text2/findapplylist.action"><i class="icon-font">&#xe037;</i>看房申请</a></li>
-                       	<li><a href="/text2/applyout/findallapplyout.action"><i class="icon-font">&#xe037;</i>退租申请</a></li>
+                        <li><a href="/clientResourceManager/findapplylist.action"><i class="icon-font">&#xe037;</i>看房申请</a></li>
+                       	<li><a href="/clientResourceManager/applyout/findallapplyout.action"><i class="icon-font">&#xe037;</i>退租申请</a></li>
                         
                     </ul>
                      </div>
@@ -94,8 +94,8 @@
                 <li>
                     <a class="a"><i class="icon-font">&#xe018;</i>报障模块</a>
        <div class="p">              <ul class="sub-menu">
-                        <li><a href="/text2/wrong/wronglist.action"><i class="icon-font">&#xe017;</i>待处理报障</a></li>
-                       	<li><a href="/text2/wrong/selectall.action"><i class="icon-font">&#xe017;</i>已处理报障</a></li>
+                        <li><a href="/clientResourceManager/wrong/wronglist.action"><i class="icon-font">&#xe017;</i>待处理报障</a></li>
+                       	<li><a href="/clientResourceManager/wrong/selectall.action"><i class="icon-font">&#xe017;</i>已处理报障</a></li>
                         
                     </ul>
                      </div>
@@ -103,9 +103,9 @@
                  <li>
                     <a class="a"><i class="icon-font">&#xe003;</i>租金信息</a>
             <div class="p">          <ul class="sub-menu">
-                    <li><a href="/text2/paid/showaddpaid.action"><i class="icon-font">&#xe008;</i>我要收租</a></li>
-                        <li><a href="/text2/paid/topaidlist.action"><i class="icon-font">&#xe008;</i>租客待缴租金</a></li>
-                        <li><a href="/text2/paid/selectall.action"><i class="icon-font">&#xe008;</i>租客已缴租金</a></li>
+                    <li><a href="/clientResourceManager/paid/showaddpaid.action"><i class="icon-font">&#xe008;</i>我要收租</a></li>
+                        <li><a href="/clientResourceManager/paid/topaidlist.action"><i class="icon-font">&#xe008;</i>租客待缴租金</a></li>
+                        <li><a href="/clientResourceManager/paid/selectall.action"><i class="icon-font">&#xe008;</i>租客已缴租金</a></li>
        
                     </ul>
                      </div>
@@ -113,8 +113,8 @@
                 <li>
                     <a class="a"><i class="icon-font">&#xe018;</i>我的日程</a>
             <div class="p">          <ul class="sub-menu">
-                        <li><a href="/text2/schedule/selectAll.action"><i class="icon-font">&#xe017;</i>查看日程</a></li>
-                       	<li><a href="/text2/schedule/toinsert.action"><i class="icon-font">&#xe017;</i>添加日程</a></li>
+                        <li><a href="/clientResourceManager/schedule/selectAll.action"><i class="icon-font">&#xe017;</i>查看日程</a></li>
+                       	<li><a href="/clientResourceManager/schedule/toinsert.action"><i class="icon-font">&#xe017;</i>添加日程</a></li>
                         
                     </ul>
                      </div>
@@ -122,7 +122,7 @@
                 <li>
                     <a class="a"><i class="icon-font">&#xe018;</i>其他操作</a>
                <div class="p">      <ul class="sub-menu">
-                        <li><a href="/text2/findalluserlist.action"><i class="icon-font">&#xe017;</i>账户管理</a></li>
+                        <li><a href="/clientResourceManager/findalluserlist.action"><i class="icon-font">&#xe017;</i>账户管理</a></li>
                        
                         
                     </ul>

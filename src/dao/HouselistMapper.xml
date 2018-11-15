@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="dao.HouselistMapper" >
-  <resultMap id="BaseResultMap" type="Pojo.Houselist" >
+  <resultMap id="BaseResultMap" type="bean.Houselist" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="houseid" property="houseid" jdbcType="VARCHAR" />
     <result column="area" property="area" jdbcType="DOUBLE" />
@@ -31,7 +31,7 @@
 		</where>
 		
   </select>
-  <select id="findhouselistByVoCount" parameterType="Pojo.QueryVo" resultType="int">
+  <select id="findhouselistByVoCount" parameterType="bean.QueryVo" resultType="int">
 		select count(*)
 		from houselist
 		<where>
@@ -53,29 +53,29 @@
 		</if>
 		</where>
 	</select>
-	<select id="findid" parameterType="Integer" resultType="Pojo.Houselist">
+	<select id="findid" parameterType="Integer" resultType="bean.Houselist">
 		select * from houselist where id=#{id}
 	</select>
-	<select id="findhouseid" parameterType="String" resultType="Pojo.Houselist">
+	<select id="findhouseid" parameterType="String" resultType="bean.Houselist">
 		select * from houselist where houseid=#{houseid}
 	</select>
-	<select id="findhouseidupdate" parameterType="Pojo.Houselist" resultType="Pojo.Houselist">
+	<select id="findhouseidupdate" parameterType="bean.Houselist" resultType="bean.Houselist">
 		select * from houselist where houseid=#{houseid} and id!=#{id}
 	</select>
-	<update id="updatehouse" parameterType="Pojo.Houselist">
+	<update id="updatehouse" parameterType="bean.Houselist">
 		update houselist set houseid=#{houseid},address=#{address},area=#{area},price=#{price},status=#{status}
 		where id=#{id}
 </update>
-<update id="updatehousestatus" parameterType="Pojo.Houselist">
+<update id="updatehousestatus" parameterType="bean.Houselist">
 		update houselist set status=#{status}
 		where id=#{id}
 </update>
-<update id="updatestatus" parameterType="Pojo.Houselist">
+<update id="updatestatus" parameterType="bean.Houselist">
 		update houselist set status=#{status}
 		where houseid=#{houseid}
 </update>
 	
-	<insert id="inserthouse" parameterType="Pojo.Houselist">
+	<insert id="inserthouse" parameterType="bean.Houselist">
 	  insert into houselist(houseid,address,area,price,status) 
 	  values(#{houseid},#{address},#{area},#{price},#{status})
 	</insert>

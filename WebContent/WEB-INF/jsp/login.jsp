@@ -11,7 +11,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>客户管理系统</title>
-<link rel="stylesheet" type="text/css" href="/text2/css/styles.css">
+<link rel="stylesheet" type="text/css" href="/clientResourceManager/css/styles.css">
 </head>
 <body>
 <div class="wrapper">
@@ -48,10 +48,10 @@
 		<li></li>
 	</ul>
 </div>
-<script type="text/javascript" src="/text2/js/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="/text2/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/clientResourceManager/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/clientResourceManager/js/jquery.validate.min.js"></script>
 <script type="text/javascript"
-    src="/text2/js/localization/messages_zh.js"></script>
+    src="/clientResourceManager/js/localization/messages_zh.js"></script>
 <script type="text/javascript">
 	 $().ready(function() {
         // 在键盘按下并释放及提交后验证提交表单
