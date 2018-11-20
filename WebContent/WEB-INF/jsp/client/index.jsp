@@ -58,13 +58,13 @@
 
 <div class="pet_circle_nav">
     <ul class="pet_circle_nav_list">
-        <li><a href="tousercenter.action" class="iconfont pet_nav_xinxianshi ">&#xe61e;</a><span>个人中心</span></li>
-        <li><a href="" class="iconfont pet_nav_zhangzhishi ">&#xe607;</a><span>趣闻</span></li>
-        <li><a href="" class="iconfont pet_nav_kantuya ">&#xe62c;</a><span>阅读</span></li>
-        <li><a href="" class="iconfont pet_nav_mengzhuanti ">&#xe622;</a><span>专题</span></li>
-        <li><a href="" class="iconfont pet_nav_meirong ">&#xe629;</a><span>订阅</span></li>
-        <li><a href="" class="iconfont pet_nav_yiyuan ">&#xe602;</a><span>专栏</span></li>
-        <li><a href="" class="iconfont pet_nav_dianpu ">&#xe604;</a><span>讨论</span></li>
+        <li><a href="/clientResourceManager/usercenter.action" class="iconfont pet_nav_xinxianshi ">&#xe61e;</a><span>个人中心</span></li>
+        <li><a href="/clientResourceManager/usercenter.action" class="iconfont pet_nav_zhangzhishi ">&#xe607;</a><span>趣闻</span></li>
+        <li><a href="/clientResourceManager/usercenter.action" class="iconfont pet_nav_kantuya ">&#xe62c;</a><span>阅读</span></li>
+        <li><a href="/clientResourceManager/usercenter.action" class="iconfont pet_nav_mengzhuanti ">&#xe622;</a><span>专题</span></li>
+        <li><a href="/clientResourceManager/usercenter.action" class="iconfont pet_nav_meirong ">&#xe629;</a><span>订阅</span></li>
+        <li><a href="/clientResourceManager/usercenter.action" class="iconfont pet_nav_yiyuan ">&#xe602;</a><span>专栏</span></li>
+        <li><a href="/clientResourceManager/usercenter.action" class="iconfont pet_nav_dianpu ">&#xe604;</a><span>讨论</span></li>
         <li><a href="javascript:;" class="iconfont pet_nav_gengduo ">&#xe600;</a><span>更多</span></li>
     </ul>
     <div class="pet_more_list"><div class="pet_more_list_block">
@@ -111,14 +111,14 @@
         <div class="pet_list_one_info">
             <div class="pet_list_one_info_l">
                 <div class="pet_list_one_info_ico"><img src="${basePath}app/img/a1.png" alt=""></div>
-                <div class="pet_list_one_info_name">Super invincible 菁 </div>
+                <div class="pet_list_one_info_name">${map.name} </div>
             </div>
             <div class="pet_list_one_info_r">
                 <div class="pet_list_tag pet_list_tag_xxs">新鲜事</div>
             </div>
         </div>
         <div class=" am-u-sm-8 am-list-main pet_list_one_nr">
-            <h3 class="am-list-item-hd pet_list_one_bt"><a href="2.内容页.html" class="">十一长假哪也不去，宅在家里看电影！</a></h3>
+            <h3 class="am-list-item-hd pet_list_one_bt"><a href="###" class="">${map.content}</a></h3>
             <div class="am-list-item-text pet_list_one_text">每逢长假，总有那么一群人选择远离人山人海，静静地呆在家，坐在电脑电视前。长时间的工作学习让他们感觉很疲惫，对什么都提不起劲，打开电脑却不知道干什么好…</div>
 
         </div>

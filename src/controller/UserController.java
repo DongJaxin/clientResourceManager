@@ -1,5 +1,7 @@
 package controller;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -30,6 +32,10 @@ public class UserController {
 		if(user1!=null){
 			httpSession.setAttribute("user", user1);
 			if(user1.getType().equals("zuke")){
+				Map<Object, Object> userMap = new HashMap<>();
+				userMap.put("name", "董嘉欣");
+				userMap.put("content", "客户烦人怎么办？滴滴打人来帮忙");
+				model.addAttribute("map", userMap);
 				return "client/index";
 			}
 			else{
@@ -44,6 +50,10 @@ public class UserController {
 	@RequestMapping("/toindex")
 	public String toindex(Model model) throws Exception{
 		return "admin/index";
-		}
 	}
+	@RequestMapping("/usercenter")
+	public String usercenter(){
+		return "client/usercenter";
+	}
+}
 
