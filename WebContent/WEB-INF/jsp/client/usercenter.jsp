@@ -1,3 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
+
 <!doctype html>
 <html>
 <head>
@@ -5,8 +14,8 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
   <meta name="keywords" content="" />
   <meta name="description" content="" />
-  <link rel="stylesheet" href="css/amazeui.min.css">
-  <link rel="stylesheet" href="css/wap.css">
+  <link rel="stylesheet" href="${basePath}app/css/amazeui.min.css">
+  <link rel="stylesheet" href="${basePath}app/css/wap.css">
   <title>小萌萌</title>
 </head>
 <body style="background:#ececec">
@@ -88,7 +97,7 @@
 
           <div class="pet_grzx_nr">
               <div class="pet_grzx_ico">
-                  <img src="img/qq1.png" alt="">
+                  <img src="${basePath}app/img/qq1.png" alt="">
               </div>
               <div class="pet_grzx_name">AamazeUI</div>
               <div class="pet_grzx_map">美国</div>
@@ -118,7 +127,7 @@
         </div>
           <div class="am-u-sm-4 am-list-thumb">
             <a href="###" class="">
-              <img src="img/q1.jpg" class="pet_list_one_img" alt=""/>
+              <img src="${basePath}app/img/q1.jpg" class="pet_list_one_img" alt=""/>
             </a>
           </div>
       </li>
@@ -132,7 +141,7 @@
           <div class="am-u-sm-4 am-list-thumb pet_video_info">
             <div class="pet_video_info_tag"><i class="iconfont">&#xe62d;</i>03:50</div>
             <a href="###" class="">
-              <img src="img/q4.jpg" class="pet_list_one_img" alt="我很囧，你保重....晒晒旅行中的那些囧！"/>
+              <img src="${basePath}app/img/q4.jpg" class="pet_list_one_img" alt="我很囧，你保重....晒晒旅行中的那些囧！"/>
             </a>
           </div>
       </li>
@@ -145,7 +154,7 @@
         </div>
           <div class="am-u-sm-4 am-list-thumb">
             <a href="###" class="">
-              <img src="img/q5.jpg" class="pet_list_one_img" alt="我很囧，你保重....晒晒旅行中的那些囧！"/>
+              <img src="${basePath}app/img/q5.jpg" class="pet_list_one_img" alt="我很囧，你保重....晒晒旅行中的那些囧！"/>
             </a>
           </div>
       </li>
@@ -159,21 +168,21 @@
       <li>
         <div class="am-gallery-item">
             <a href="###" class="">
-              <img src="img/qq1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+              <img src="${basePath}app/img/qq1.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
             </a>
         </div>
       </li>
       <li>
         <div class="am-gallery-item">
             <a href="###" class="">
-              <img src="img/qq2.jpg"  alt="不要太担心 只因为我相信"/>
+              <img src="${basePath}app/img/qq2.jpg"  alt="不要太担心 只因为我相信"/>
             </a>
         </div>
       </li>
       <li>
         <div class="am-gallery-item">
             <a href="###" class="">
-              <img src="img/qq3.jpg"  alt="终会走过这条遥远的道路"/>
+              <img src="${basePath}app/img/qq3.jpg"  alt="终会走过这条遥远的道路"/>
             </a>
         </div>
       </li>
@@ -205,7 +214,7 @@
 <div class="pet_article_dowload">
       <div class="pet_article_dowload_title">关于Amaze UI</div>
       <div class="pet_article_dowload_content"><div class="pet_article_dowload_triangle"></div>
-      <div class="pet_article_dowload_ico"><img src="img/footdon.png" alt=""></div>
+      <div class="pet_article_dowload_ico"><img src="${basePath}app/img/footdon.png" alt=""></div>
       <div class="pet_article_dowload_content_font">
 Amaze UI 以移动优先（Mobile first）为理念，从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。
       </div>
@@ -220,8 +229,8 @@ Amaze UI 以移动优先（Mobile first）为理念，从小屏逐步扩展到�
         <div class="pet_article_footer_info">Copyright(c)2015 PetShow All Rights Reserved</div>
       </div>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/amazeui.min.js"></script>
+    <script src="${basePath}app/js/jquery.min.js"></script>
+    <script src="${basePath}app/js/amazeui.min.js"></script>
     <script>
 $(function(){
 
